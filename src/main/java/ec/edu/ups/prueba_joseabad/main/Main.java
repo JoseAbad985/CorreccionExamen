@@ -29,9 +29,10 @@ public class Main {
         ClienteDAO clienteDAO = new ClienteDAO();
         ProductoDAO productoDAO = new ProductoDAO();
 
-        ControladorCarrito controladorCarrito = new ControladorCarrito(vistaCarrito, vistaCliente, vistaProducto, carritoDAO);
+        ControladorCarrito controladorCarrito = new ControladorCarrito(vistaCarrito, vistaCliente, vistaProducto, carritoDAO, clienteDAO, productoDAO);
         ControladorCliente controladorCliente = new ControladorCliente(vistaCliente, clienteDAO);
         ControladorProducto controladorProducto = new ControladorProducto(vistaProducto, productoDAO);
+        
         
         
         // Crear un cliente para asignar a un carrito

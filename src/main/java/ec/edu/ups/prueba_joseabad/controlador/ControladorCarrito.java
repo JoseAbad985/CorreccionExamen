@@ -44,6 +44,17 @@ public class ControladorCarrito {
         this.carritoDAO = cantanteDAO;
     }
 
+    public ControladorCarrito(VistaCarrito vistaCarrito, VistaCliente vistaCliente, VistaProducto vistaProducto, CarritoIDAO carritoDAO, ClienteIDAO clienteDAO, ProductoIDAO productoDAO) {
+        this.vistaCarrito = vistaCarrito;
+        this.vistaCliente = vistaCliente;
+        this.vistaProducto = vistaProducto;
+        this.carritoDAO = carritoDAO;
+        this.clienteDAO = clienteDAO;
+        this.productoDAO = productoDAO;
+    }
+    
+    
+    
     public ControladorCarrito(VistaCarrito vistaCarrito, VistaCliente vistaCliente, VistaProducto vistaProducto, CarritoIDAO carritoDAO) {
         this.vistaCarrito = vistaCarrito;
         this.vistaCliente = vistaCliente;

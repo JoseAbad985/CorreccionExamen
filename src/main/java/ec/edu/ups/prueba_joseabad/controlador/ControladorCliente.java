@@ -24,7 +24,8 @@ public class ControladorCliente {
         this.cliente = cliente;
         this.clienteDAO = clienteDAO;
     }
-
+    
+    
     public ControladorCliente(VistaCliente vistaCliente, ClienteIDAO clienteDAO) {
         this.vistaCliente = vistaCliente;
         this.clienteDAO = clienteDAO;
