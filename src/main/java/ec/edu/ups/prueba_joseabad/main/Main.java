@@ -44,8 +44,9 @@ public class Main {
         
         // Crear un carrito
         controladorCarrito.registrarCarrito();
-
         
+        //ver el carrito 
+        controladorCarrito.verCarrito();
 
     }
 }
